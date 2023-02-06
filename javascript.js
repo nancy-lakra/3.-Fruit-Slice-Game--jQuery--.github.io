@@ -54,7 +54,7 @@ $(function () {
     $("#fruit1").mouseover(function () {
         //if you touch a bomb
         var s = $("#fruit1").attr('src');
-        if (s == 'images/bomb.png') {   //then lose a life
+        if (s == 'bomb.png') {   //then lose a life
             live--;
             setlive();
             //also if it was your last life
@@ -85,7 +85,7 @@ $(function () {
     function setlive() {
         $("#live").empty();
         for (i = 0; i < live; i++) {
-            $("#live").append('<img src="images/heart.png" class = "life">');
+            $("#live").append('<img src="heart.png" class = "life">');
         }
     }
 
@@ -120,7 +120,7 @@ $(function () {
     //function to choose a random fruit
     function chooseFruit() {
         var i = Math.round(8 * Math.random());
-        $("#fruit1").attr('src', 'images/' + fruits[i] + '.png');
+        $("#fruit1").attr('src',fruits[i] + '.png');
     }
 
     //function to end the game
