@@ -1,0 +1,180 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc)
+}
+
+#container {
+    height: 600px;
+    width: 800px;
+    background-image: url(images/bg.png);
+    border: 1px solid #9DD2EA;
+    margin: 25px auto;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    font-family: "Fira Sans", serif;
+}
+
+#live {
+    text-align: center;
+    background-color: #F1FF92;
+    height: 15px;
+    color: #888E5F;
+    padding: 10px;
+    position: absolute;
+    left: 25px;
+    width: 100px;
+    box-shadow: 2px 2px 0px 0px #9da853;
+    display: none;
+}
+
+.life{
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}
+
+#score {
+    text-align: center;
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 10px;
+    position: absolute;
+    left: 650px;
+    width: 80px;
+    box-shadow: 2px 2px 0px 0px #9da853;
+    display: none;
+}
+
+
+.fruit{
+    display: none;
+    height: 100px;
+    width: auto;
+    position: absolute;
+}
+
+#instruction {
+    background-image: url(images/bg.jpg);
+    box-shadow: 2px 2px rgb(1, 41, 17);
+    border-radius: 7px;
+    position: absolute;
+    width: 550px;
+    height: 368px;
+    padding: 50px;
+    top: 91px;
+    left: 105px;
+    display: none;
+}
+
+#welcome {
+    font-size: 40px;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    color: rgb(37, 51, 43);
+}
+
+#rules {
+    font-size: 17px;
+    text-align: justify;
+    color: rgb(219, 253, 234);
+}
+
+#ready {
+    font-size: 25px;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    color: rgb(219, 253, 234);
+}
+
+#startreset {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    border: 0px solid white;
+    border-radius: 3px;
+    position: absolute;
+    top: 570px;
+    left: 363px;
+    margin: 10px auto;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#startreset:hover {
+    background-color: #cd7b55;
+    box-shadow: 2px 2px #d5612c;
+    transition: all 0.2s;
+}
+
+#startreset:active {
+    box-shadow: 0px 0px #6b54d3;
+    background-color: #d5612c;
+}
+#screen {
+    background-image: url(images/bg.jpg);
+    box-shadow: 2px 2px rgb(1, 41, 17);
+    border-radius: 7px;
+    width: 630px;
+    height: 450px;
+    color: rgb(241, 241, 241);
+    padding: 10px;
+    margin: 60px auto 10px auto;
+    text-align: center;
+    font-size: 90px;
+    font-family: cursive, serif;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+#gameover {
+    background-image: url(images/bg.jpg);
+    position: absolute;
+    width: 645px;
+    height: 395px;
+    padding-top: 75px;
+    font-size: 40px;
+    text-align: center;
+    color: #072d14;
+    text-decoration: solid;
+    font-weight: 700;
+    border: 0px solid rgb(101, 51, 29);
+    border-radius: 5px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 90px;
+    left: 110px;
+    z-index: 1;
+    display: none;
+}
+
+#okay {
+    position: absolute;
+    left: 390px;
+    top: 400px;
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(222, 221, 221);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+    display: none;
+}
+
+#okay:hover {
+    background-color: rgba(30, 42, 28, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+#okay:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">   
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Fruit Slice</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="instruction">
+                <p id="welcome">Fruit Slice</p>
+                <p id="rules">Please go through the following instructions:<br/>
+                    <ul id="rules">
+                        <li>Different fruits and bombs will pop up on the screen.</li>
+                        <li>You have to cut the fruits, and dodge the bombs.</li>
+                        <li>Cutting a fruit will give you 5 points.</li>
+                        <li>Each time you touch a bomb, you lose one life.</li>
+                        <li>You have 3 lives to start with.</li>
+                    </ul> 
+                </p>
+                </br>
+                <p id="ready">
+                    Are you ready?
+                </p>
+            </div>
+            <div id="score">
+                Score: <span id="scorecount">0</span>
+            </div>
+            <div id="live">
+                
+            </div>
+            
+            <div id="screen">
+                <img id="fruit1" class="fruit">
+                
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            
+            <div id="gameover" class="font-effect-shadow-multiple">
+                <br/><br/>GAME OVER!<br/>YOUR SCORE IS 0
+            </div>
+            <div id="okay">
+                OK
+            </div>
+        </div>
+        <audio id="sound">
+            <source src="audio/audio.mp3"></source>
+        </audio>
+        <audio id="losesound">
+            <source src="audio/audio1.mp3"></source>
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>
